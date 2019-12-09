@@ -183,7 +183,7 @@ class RokuSkill(MycroftSkill):
 
 		keyword=self._extract_show(message)
 
-		url = '{}search/browse?keyword={}{}&launch=true'.format (self.rokuLocation, keyword.replace(" ", "%20"), provider)
+		url = '{}search/browse?keyword={}{}&launch=true&match-any=true'.format (self.rokuLocation, keyword.replace(" ", "%20"), provider)
 		
 		LOG.info("Roku API request: " + url)
 		
