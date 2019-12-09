@@ -173,6 +173,8 @@ class RokuSkill(MycroftSkill):
 			provider = "1453"
 		elif src == "plex":
 			provider = "13535"
+                elif src == "disney plus":
+                        provider = "291097"
 		else:	# Roku
 			provider = ""
 
