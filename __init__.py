@@ -185,7 +185,7 @@ class RokuSkill(MycroftSkill):
 
 		url = '{}search/browse?keyword={}{}&launch=true'.format (self.rokuLocation, keyword.replace(" ", "%20"), provider)
 		
-		LOG.info("Roku API request: : + url)
+		LOG.info("Roku API request: " + url)
 		
 		try:
 			postdata = urllib.parse.urlencode({}).encode()
